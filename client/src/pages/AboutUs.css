@@ -1,0 +1,57 @@
+
+
+/* Fonts - The original HTML links will be handled by your project's index.html */
+.heading-font { font-family: "Protest Revolution", sans-serif; }
+.body-font { font-family: "Marko One", serif; }
+.number-font { font-family: "Madimi One", sans-serif; }
+
+/* Text Stroke Effect */
+.black-text-red-stroke {
+  color: black;
+  text-shadow:
+    -4px -4px 0 #c41616, 4px -4px 0 #c62222e2,
+    -4px 4px 0 #810303, 4px 4px 0 #810303,
+    -8px 0 0 #810303, 8px 0 0 #810303,
+    0 -8px 0 #ea2e2ee2, 0 8px 0 #c41616;
+  font-size: 80px;
+}
+
+/* Animated Number Styles */
+.animated-number {
+  transition: opacity 0.5s;
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(13, 181, 64, 0.8);
+}
+
+/* Stat Box Styling */
+.stat-box {
+  background: rgba(36, 64, 30, 0.6);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  min-width: 14rem;
+}
+
+.content-wrapper { gap: 2rem; }
+
+.stat-text { font-size: 1.125rem; }
+@media (min-width: 768px) {
+  .stat-text { font-size: 1.25rem; }
+}
+
+/* Hero Background Container (styles moved from original CSS) */
+.hero {
+  /* BACKGROUND IMAGE PATH REMOVED FROM HERE - IT'S NOW IN AboutUs.jsx */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+
+/* Safety styles for overlay */
+.hero .overlay-content { position: relative; z-index: 2; }
+.hero img.fallback-hidden { display: none; }

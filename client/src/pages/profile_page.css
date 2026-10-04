@@ -1,0 +1,509 @@
+.frame {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  background-image: url('./SAM02403.JPG');
+
+  
+background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+}
+
+.frame {
+  background-size: 120%;
+  background-position: center;
+}
+
+.logo {
+position: absolute;
+width: 348.1px;
+height: 320.5px;
+left: 87px;
+top: 320px;
+background: url(sf_logo.bea788dbe4b626510928.png);
+}
+
+
+.title {
+position: absolute;
+width: 301.6px;
+height: 85.2px;
+left: 600px;
+top: 10px;
+font-family: 'Inknut Antiqua';
+font-style: inherit;
+font-weight: 500;
+font-size: 40px;
+line-height: 98px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.fest {
+position: absolute;
+width: 383px;
+height: 94px;
+left: 69.8px;
+top: 500.7px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 94px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.college {
+position: absolute;
+width: 238px;
+height: 46px;
+left: 142.2px;
+top: 600px;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 46px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+
+.Rectangle13 {
+box-sizing: border-box;
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 210px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle33 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 340px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle31 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 470px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle29 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 600px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle27 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 730px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle25 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 539.9px;
+top: 860px;
+background: rgba(110, 100, 100, 0.6);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle34 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 927.6px;
+top: 275px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle32 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 927.6px;
+top: 405px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle30 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 927.6px;
+top: 535px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle28 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 927.6px;
+top: 665px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+.Rectangle26 {
+position: absolute;
+width: 350px;
+height: 65px;
+left: 927.6px;
+top: 795px;
+background: rgba(110, 100, 100, 0.5);
+border: 0.1px solid #4f3b3b;
+}
+
+
+.id {
+position: absolute;
+width: 62px;
+height: 27px;
+left: 539.9px;
+top: 160px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.name {
+position: absolute;
+width: 74px;
+height: 27px;
+left: 927.6px;
+top: 225px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.coll {
+position: absolute;
+width: 96px;
+height: 27px;
+left: 539.9px;
+top: 290px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.city {
+position: absolute;
+width: 55px;
+height: 27px;
+left: 927.6px;
+top: 355px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.state {
+position: absolute;
+width: 70px;
+height: 27px;
+left: 539.9px;
+top: 420px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.dob {
+position: absolute;
+width: 157px;
+height: 27px;
+left: 927.6px;
+top: 485px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.gender {
+position: absolute;
+width: 93px;
+height: 27px;
+left: 539.9px;
+top: 550px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.pn {
+position: absolute;
+width: 180px;
+height: 27px;
+left: 927.6px;
+top: 615px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.email {
+position: absolute;
+width: 82px;
+height: 27px;
+left: 539.9px;
+top: 680px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.aem {
+position: absolute;
+width: 199px;
+height: 27px;
+left: 927.6px;
+top: 745px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+.yop {
+position: absolute;
+width: 189px;
+height: 27px;
+left: 539.9px;
+top: 810px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 27px;
+
+text-align: center;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .frame {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo img {
+    width: 50vw;
+  }
+}
+@media (max-width: 768px) {
+  .frame {
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    
+  }
+
+   .logo {
+     top: 150px;
+    left: 55px;
+   }
+
+   .fest {
+    font-size: 55px; /* Scale text */
+    position: relative;
+    top: 190px;
+    left: 0px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 42px;
+    position: relative;
+    top: 0;
+    left: 50px;
+    text-align: center;
+  }
+
+  .college {
+     font-size: 30px;
+    position: relative;
+    top: 100px;
+    left: 73px;
+    text-align: center;
+  }
+
+  .Rectangle13 {
+    top: 600px;
+    left: 50px;
+  }
+  .Rectangle33 {
+    top: 730px;
+    left: 50px;
+  }
+  .Rectangle31 {
+    top: 860px;
+    left: 50px;
+  }
+  .Rectangle29 {
+    top: 990px;
+    left: 50px;
+  }
+  .Rectangle27 {
+    top: 1120px;
+    left: 50px;
+  }
+  .Rectangle25 {
+    top: 1250px;
+    left: 50px;
+  }
+  .Rectangle34 {
+    top: 1380px;
+    left: 50px;
+  }
+  .Rectangle32 {
+    top: 1510px;
+    left: 50px;
+  }
+  .Rectangle30 {
+    top: 1640px;
+    left: 50px;
+  }
+  .Rectangle28 {
+    top: 1770px;
+    left: 50px;
+  }
+  .Rectangle26 {
+    top: 1900px;
+    left: 50px;
+  }
+  .id {
+    top: 550px;
+    left: 50px;
+  }
+  .name {
+    top: 680px;
+    left: 50px;
+  }
+  .coll {
+    top: 810px;
+    left: 50px;
+  }
+  .city {
+    top: 940px;
+    left: 50px;
+  }
+  .state {
+    top: 1070px;
+    left: 50px;
+  }
+  .dob {
+    top: 1200px;
+    left: 50px;
+  }
+  .gender {
+    top: 1330px;
+    left: 50px;
+  }
+  .pn {
+    top: 1460px;
+    left: 50px;
+  }
+  .email {
+    top: 1590px;
+    left: 50px;
+  }
+  .aem {
+    top: 1720px;
+    left: 50px;
+  }
+  .yop {
+    top: 1850px;
+    left: 50px;
+  }
+}

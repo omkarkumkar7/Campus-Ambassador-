@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Jaro&family=Kaushan+Script&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-jaro: "Jaro", sans-serif;
+  --font-display: "Belleza", "Optima", "Segoe UI", sans-serif;
+  --font-script: "Kaushan Script", cursive;
+  --breakpoint-xl2: 1220px;
+}
+
+
+/* Custom class for the Jaro font */
+.font-jaro {
+  font-family: 'Jaro', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0f;
+  color: white;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 🖋️ FONTS */
+h1 {
+  font-family: 'Jaro', sans-serif !important;
+  font-size: clamp(2rem, 5vw, 60px);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Jaro', sans-serif;
+}
+
+/* ✨ HEADING GLOW */
+.text-glow {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+/* 🌊 FLOAT ANIMATION */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 💫 FLOATING PILL */
+.pill {
+  background: url("/pill-bg.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 9999px;
+  padding: 12px 50px;
+  color: #fff;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(140, 84, 255, 0.35);
+  animation: floatUpDown 3.5s ease-in-out infinite;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+/* 🎯 WRAPPER */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding-top: 140px;
+  padding-bottom: 120px;
+  /* ⬅ reduced bottom padding */
+  max-width: 1150px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 🟣 CARD */
+.perk-card {
+  /* background: url("/card-bg.png") no-repeat center center; */
+  background-size: cover;
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  width: 260px;
+  height: 190px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.45);
+}
+
+/* 🎁 ICON BOX */
+.icon-box {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: url("/icon-bg.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -8px;
+  margin-bottom: 6px;
+  box-shadow: 0 0 15px rgba(140, 84, 255, 0.4);
+}
+
+/* glowing edge */
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #4fc3ff, #b46cff);
+  z-index: -1;
+}
+
+.icon-box svg {
+  color: #fff;
+  stroke-width: 1.8;
+}
+
+/* 🧾 CARD TEXT */
+.perk-card h2 {
+  font-size: clamp(1rem, 1.8vw, 1.08rem);
+  margin-bottom: 6px;
+  letter-spacing: 0.6px;
+}
+
+.perk-card p {
+  font-size: clamp(0.75rem, 1.6vw, 0.83rem);
+  line-height: 1.25rem;
+  padding: 0 18px;
+}
+
+/* 📦 GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px 50px;
+  justify-items: center;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: 80px;
+  /* ⬅ reduced gap under cards */
+}
+
+/* 🧭 RESPONSIVE */
+
+/* ✅ Tablets */
+@media (max-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 35px;
+  }
+
+  .perk-card {
+    width: 240px;
+    height: 180px;
+  }
+
+  .pill {
+    padding: 10px 40px;
+  }
+
+  .wrapper {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+
+/* ✅ Small tablets / large phones */
+@media (max-width: 768px) {
+  .wrapper {
+    justify-content: flex-start;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    /* ⬅ reduced */
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: -5px;
+  }
+
+  .perk-card {
+    width: 280px;
+    height: 190px;
+  }
+
+  .pill {
+    font-size: 0.95rem;
+    padding: 10px 35px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ✅ Mobile phones */
+@media (max-width: 480px) {
+  .wrapper {
+    justify-content: flex-start;
+    padding-top: 70px;
+    /* ⬅ lifted up */
+    padding-bottom: 70px;
+    /* ⬅ reduced to fix big bottom gap */
+  }
+
+  h1 {
+    margin-top: 15px;
+  }
+
+  .pill {
+    font-size: 0.85rem;
+    padding: 8px 25px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    /* reduced bottom gap under grid */
+  }
+
+  .perk-card {
+    width: 90%;
+    height: 180px;
+  }
+}
+
+/* 🌠 SCROLL GLIDE ANIMATION */
+@keyframes glideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* initial hidden state */
+.perk-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* when visible */
+.perk-card.visible {
+  animation: glideUp 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+
